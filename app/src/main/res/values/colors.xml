@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="colorPrimary">#2196f3</color>
+    <color name="colorPrimaryDark">#2196f3</color>
+    <color name="colorAccent">#0026ca</color>
+    <color name="colorAccent50">#D90026ca</color>
+    <color name="buttonone">#ff5722</color>
+    <color name="buttontwo">#ab47bc</color>
+    <color name="buttonthree">#8bc34a</color>
+    <color name="buttonfour">#2196f3</color>
+    <color name="green">#4caf50</color>
+    <color name="red">#ba000d</color>
+    <color name="popup_blue">#3949ab</color>
+    <color name="pop_up_orange">#fc4a1a</color>
+    <color name="qboard_black">#212121</color>
+    <color name="cgray">#37474f</color>
+    <color name="white">#ffffff</color>
+    <color name="colorSlide_1">#48b1a7</color>
+    <color name ="colorVerde">#EE036B67</color>
+    <color name="colorverd">#00695C</color>
+    <color name="colorGreen1">#3eb959</color>
+    <color name="blanquito">#AAAAAD</color>
+
+    <color name="colorOlas">#37474f</color>
+    <color name="colorOlas1">#00695C</color>
+
+</resources>

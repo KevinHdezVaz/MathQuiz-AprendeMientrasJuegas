@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MathQuiz</string>
+
+    <string name="tiempo">Tiempo: </string>
+    <string name="tiempo_restante">Tiempo: </string>
+    <string name="limpiar">Limpiar</string>
+    <string name="enter">Enter</string>
+
+
+
+    <string name="intentoPlayed">Intentos: 0</string>
+    <string name="welcome2">APRENDE MIENTRAS JUEGAS.</string>
+    <string name="btn_entrar">ENTRAR A JUGAR</string>
+    <string name="welcome">AFRONTA TUS HABILIDADES CON DIVERSOS JUEGOS DIVERTIDOS E INTERESANTES.</string>
+    <string name="vibrarss">Vibración</string>
+    <string name="dark">Modo Oscuro</string>
+
+    <!-- Score Pop up String -->
+    <string name="score_pop_score">You got %1$d right out of %2$d</string>
+
+    <string name="afk_text">¿Estás ahí?</string>
+
+    <!--User feedback strings for Time Trials-->
+    <string name="default_time_trials">VAMOS!</string>
+    <string name="good_job">BUEN TRABAJO</string>
+    <string name="amazing">INCREIBLE</string>
+    <string name="fantastic">FANTASTICO</string>
+    <string name="damn">YEAA</string>
+    <string name="genius">GENIO</string>
+    <string name="sweet">VAMOOS</string>
+    <string name="crazy">WOW!</string>
+    <string name="keep">EXCELENTE</string>
+    <string name="unbelievable">BUENA</string>
+    <string name="brilliant">BRILLANTE</string>
+    <string name="surprised">O_O</string>
+    <string name="on_a_roll">SABIOOO!</string>
+    <string name="ohno">Oh no!</string>
+    <string name="next">SIGUIENTE</string>
+    <string name="sad">:(</string>
+
+
+    <!--score-->
+    <string name="score">SCORE: %1$d</string>
+
+
+    <!--intro-->
+    <string name="saludo1">¡Bienvenido! No hay límite de tiempo aquí, pero tienes un cronómetro. Puede hacer clic en él en cualquier momento para detener, reiniciar o salir.
+</string>
+    <string name="saludo2">Se le harán preguntas largas y ventosas pero NO difíciles. Aquí se aplica el mismo truco: ¡busca el patrón!
+</string>
+    <string name="saludo3">Te ayudaré con este, ya que la respuesta correcta es:\n </string>
+    <string name="saludo4">. Toque el botón.</string>
+    <string name="saludo5">Tu puntuación está aquí. Tienes 1 correcta de 1. Ya está todo listo, ¡ahora comience a entrenar a esa bestia (su cerebro)!
+    </string>
+
+    <string name="saludo_op1">Intente responder tantas preguntas como pueda antes de que se acabe el tiempo.</string>
+    <string name="saludo_op2">Analice la pregunta: no intente adivinar. Busque el patrón. Puede hacer clic en el tablero de preguntas o en el icono de pausa para detener y reiniciar o salir en cualquier momento.</string>
+    <string name="saludos_op3">Te ayudaré con este, ya que es una ecuación correcta. \n\nToca la correcta.
+</string>
+    <string name="saludos_op4">Te ayudaré con este, ya que es una ecuación incorrecta. \n\nToca la incorrecta.</string>
+    <string name="saludos_op5">Recibirá comentarios basados ​​en su respuesta. Observe el fondo a medida que cambia el color con el temporizador. Toque \" Buen trabajo "\ para continuar.
+</string>
+    <string name="saludos_op6">Toque el tablero de preguntas o el icono de pausa para detener y reiniciar el juego. ¡Y ya está todo listo!</string>
+
+    <string name="saludos_ti1">¡Bienvenido! Tienes 10 segundos para encontrar la ecuación correcta. El temporizador se reinicia si encuentras la correcta.</string>
+    <string name="saludos_ti2">Te ayudaré con este, ya que la respuesta correcta es:\n</string>
+    <string name="saludos_ti3">. Toca el botón. \n\nPierdes si no seleccionas la ecuación correcta.
+</string>
+    <string name="saludos_ti4">Recibirá una retroalimentación basada en su respuesta. ¡Palabras de aliento!</string>
+    <string name="saludos_ti5">"Esta es tu ... puntuación. Bastante simple. ¡Ya estás listo! Toca una ecuación incorrecta para que aparezca el marcador".
+</string>
+
+    <string name="kota">Ya estas listo para jugar!</string>
+    <!--timer-->
+    <string name="time_left_five">10s</string>
+    <string name="time_left">%1$ds</string>
+    <string name="time_left_ten_less">0%1$ds</string>
+
+    <!--ajustes-->
+
+    <string name="correcto_inco">Seleccione el tipo de matemática que desea resolver</string>
+    <string name="suma">Suma</string>
+    <string name="resta">Resta</string>
+    <string name="multiplicacion">Multiplicación</string>
+    <string name="division">División</string>
+    <string name="cron">Cronómetro</string>
+    <string name="crono">¿Quieres que el cronómetro se muestre?</string>
+    <string name="tempo">Activar / desactivar temporizador</string>
+    <string name="tme">Temporizador</string>
+    <string name="aym">Suma * Multiplicación</string>
+    <string name="sym">Resta * Multiplicación</string>
+    <string name="am">Suma / Multiplicación</string>
+    <string name="sm">Resta / Multiplicación</string>
+    <string name="sq">Raiz Cuadrada</string>
+    <string name="square2">Raiz</string>
+    <string name="cube2">Elevado al cubo</string>
+
+
+    <!--quickmath timer-->
+    <string name="timer_quick_math">Tiempo: %1$ds</string>
+    <string name="timer_quick_math_ten_less">Time: 0%1$ds</string>
+    <string name="timer_disabled">Se acabo el tiempo</string>
+    <string name="taponq">DESHABILITADO</string>
+    <!--advanced-->
+
+    <string name="square">%1$d\u00B2</string>
+    <string name="cube">%1$d\u00B3</string>
+    <string name="box">%1$d</string>
+    <string name="sqrt">\u221A%1$d</string>
+    <string name="cbrt">\u221B%1$d</string>
+    <string name="zero_score">0 of 0</string>
+    <string name="advanced_score">%1$d of %2$d</string>
+    <string name="triple_sum">%1$d + %2$d + %3$d</string>
+    <string name="triple_sum_multiply">(%1$d + %2$d) x %3$d</string>
+    <string name="triple_sub_multiply">(%1$d - %2$d) x %3$d</string>
+    <string name="triple_sum_div">(%1$d + %2$d) / %3$d</string>
+    <string name="triple_sub_div">(%1$d - %2$d) / %3$d</string>
+    <string name="triple_sub">%1$d - %2$d - %3$d</string>
+    <string name="go">VAMOS!</string>
+
+    <!--quick math-->
+    <string name="sum">%1$d + %2$d = %3$d</string>
+    <string name="sub">%1$d - %2$d = %3$d</string>
+    <string name="mult">%1$d x %2$d = %3$d</string>
+    <string name="div">%1$d / %2$d = %3$d</string>
+
+    <!--quick math score pop up text-->
+    <string name="hey_there_genius">¡Hola genio!</string>
+    <string name="are_you_even">¡Puedes hacerlo mejor! ;)</string>
+    <string name="need_more_practice">¡Ya casi, Ya casi!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="challenge_your_math_skills">Challenge your math skills</string>
+    <string name="mathtank">MathTank</string>
+    <string name="settingsbutton">settingsButton</string>
+    <string name="what_type_of_shark_are_you_today">What type of shark are you today?</string>
+    <string name="high_score">High Scores</string>
+
+
+    <!--What does kids mode do-->
+    <string name="kidspref">El modo para niños atenúa la complejidad de las preguntas matemáticas rápidas.
+</string>
+    <string name="title_activity_scores">Scores</string>
+
+    <!--Settings texts-->
+    <string name="flashing_text">Si sufres de epilepsia fotosensitiva deshabilita esta opcion. </string>
+
+    <!--high score page-->
+    <string name="highscore">RECORDS</string>
+    <string name="quickMathHighScore">Quick math stats</string>
+    <string name="advancedHighScore">Advanced Stats</string>
+    <string name="qScore">Correctas: %1$d de %2$d</string>
+    <string name="aScore">Correctas: %1$d de %2$d</string>
+    <string name="timesPlayed">Intentos: %1$d</string>
+    <string name="tScore">Más Alto: %1$d</string>
+    <string name="timeTaken">Tiempo Jugado: %1$d segundos</string>
+    <string name="aTimeTaken">Tiempo Jugado: %1$d segundos</string>
+
+    <!--scoredhow strings-->
+    <string name="quickmath">Quick Math</string>
+    <string name="timetrials">Timetrials</string>
+    <string name="advanced">Advanced</string>
+    <string name="quickmathrules">You\'re scored based on the difference between quantity, answers correct and wrong. You\'re not scored when: any type of questions are disabled, timer is disabled or kids mode is enabled.</string>
+    <string name="timetrialsrules">Timetrials scoring is based on the how many you got right and within what time. The elo is calculated by dividing how much you scored by how much time you took (in seconds). Same rules apply here.
+    All types of questions need to remain enabled, timer enabled and kids mode disabled.</string>
+    <string name="advancederules">Advanced is a mixture of Quick math and Timetrials. You are scored based off of the difference between total answered, total correct and how much time you took to get there. A score will not be counted as the new high score if either of the validations are not true.</string>
+
+    <string name="normal.channel.id">channel.id.notification.normal</string>
+    <string name="normal.channel.name">Oferta normal</string>
+    <!--otros -->
+    <string name="adivina2">¿Eres capaz de adivinar el número que estoy pensando?</string>
+    <string name="adivina3">Ingresa el numero maximo y despues adivina el número:</string>
+    <string name="jugar">JUGAR</string>
+    <string name="adivina">Adivina el número</string>
+    <string name="seguirJugando">Seguir jugando</string>
+    <string name="salir">Salir</string>
+    <string name="salir2">¿Quieres salir?</string>
+    <string name="scores">Puntaje:</string>
+    <string name="comprobar">COMPROBAR</string>
+    <string name="intentos">INTENTOS</string>
+    <string name="play">JUGAR</string>
+    <string name="time">TIEMPO</string>
+    <string name="operacio">OPERACIONES</string>
+    <string name="correctoe">CORRECTO E INCORRECTO</string>
+
+
+    <string name="intentarlo">INTENTARLO DE NUEVO</string>
+    <string name="aprende">APRENDE MATEMÁTICAS MIENTRAS JUEGAS</string>
+    <string name="intenta">INTENTA ADIVINAR EL NÚMERO QUE PENSÉ.</string>
+    <string name="encuentra">ENCUENTRA LA SOLUCIÓN CORRECTA</string>
+    <string name="mat">Mientras practicas aprendes, en unos años me lo vas a agradecer ;)</string>
+
+    <string name="anuncio">ca-app-pub-3881357943956604/2026152131</string>
+ </resources>

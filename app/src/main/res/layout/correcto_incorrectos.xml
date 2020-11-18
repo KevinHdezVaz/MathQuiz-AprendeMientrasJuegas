@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/quickMathBg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.scwang.wave.MultiWaveHeader
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:id="@+id/wave_header"
+        ></com.scwang.wave.MultiWaveHeader>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginRight="25dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+android:id="@+id/cardds"
+        android:layout_centerInParent="true"
+        android:layout_height="600dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal">
+                <TextView
+                     android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+
+                <TextView
+                    android:id="@+id/stopwatchText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:layout_marginEnd="8dp"
+                    android:padding="10dp"
+                    android:onClick="playAgain"
+                    android:layout_gravity="center"
+                    android:background="@drawable/gradiente"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:layout_weight="1"
+                    android:text="0:00"
+                    android:textColor="#fff"
+                    android:textSize="30dp"
+                    />
+
+
+                <ImageButton
+                    android:id="@+id/pauseButton"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:onClick="showPopUp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/back2"
+                    android:contentDescription="Mute Button"
+
+                    app:srcCompat="@drawable/ic_pause_black_24dp" />
+            </LinearLayout>
+            <View
+                android:id="@+id/linea"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@id/arriba"
+                android:layout_alignParentStart="true"
+
+                android:alpha=".5"
+
+                android:background="@android:color/holo_blue_dark">
+
+
+            </View>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/quickMathQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_redondo"
+                    android:elevation="20dp"
+                    android:fontFamily="@font/passion_one_regular"
+                    android:gravity="center"
+                     android:text="2+2=5"
+                    android:textColor="@android:color/white"
+                    android:textSize="50sp" />
+                <View
+                    android:id="@+id/linea2"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/quickMathQuestion"
+
+                    android:layout_alignParentStart="true"
+
+                    android:alpha=".5"
+
+                    android:background="@android:color/holo_blue_dark">
+
+
+                </View>
+
+                <TextView
+                    android:id="@+id/quickMathsScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linea2"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/passion_one_bold"
+                    android:text="SCORE: 0"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="40sp" />
+
+
+                <TextView
+                    android:id="@+id/plusOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/quickMathsScore"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/quicksand_regular"
+
+                    android:gravity="center"
+                    android:text=";)"
+                    android:textColor="@color/colorverd"
+                    android:textSize="35dp"></TextView>
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/plusOne"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/correctButton"
+                         style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:tag="0"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:elevation="10dp"
+                        android:fontFamily="@font/permanentmarker_regular"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:onClick="choose"
+                        android:background="@android:color/white"
+                         android:scaleType="center"
+                        android:src="@drawable/garrapata"
+                       />
+
+                    <ImageButton
+                        android:id="@+id/wrongButton"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:tag="1"
+                        android:adjustViewBounds="true"
+                        android:elevation="10dp"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:onClick="choose"
+                        android:scaleType="center"
+                        android:src="@drawable/cancelar"
+                        android:background="@android:color/white"
+                        />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.scwang.wave.MultiWaveHeader
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:scaleY="-1"
+
+        android:id="@+id/wave_header2"
+        android:layout_alignParentBottom="true"
+        ></com.scwang.wave.MultiWaveHeader>
+
+</RelativeLayout>

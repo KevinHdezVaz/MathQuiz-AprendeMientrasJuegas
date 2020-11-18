@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="470dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:id="@+id/linearLa"
+    android:backgroundTint="@android:color/white"
+    android:layout_margin="20dp"
+    android:background="@drawable/btn_redondo"
+
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/winningMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/gradiente4"
+        android:fontFamily="@font/passion_one_bold"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/salir2"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         >
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="40dp"
+             android:id="@+id/Animacion"
+            android:layout_centerInParent="true"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/game"
+            ></com.airbnb.lottie.LottieAnimationView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/seguir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_redondo"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:backgroundTint="#4EA56F"
+            android:fontFamily="@font/passion_one_bold"
+            android:gravity="center"
+            android:onClick="playAgain"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:text="@string/seguirJugando"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/salir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:background="@drawable/btn_redondo"
+            android:fontFamily="@font/passion_one_bold"
+            android:layout_weight="1"
+
+            android:onClick="quit"
+            android:text="@string/salir"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:padding="15dp"
+
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

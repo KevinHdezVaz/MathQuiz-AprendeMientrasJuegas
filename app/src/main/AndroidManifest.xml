@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kev.mathquiz">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3881357943956604~3382970997"/>
+
+         <activity android:name="com.kev.mathquiz.juego3.JuegoTiempo" />
+        <activity android:name="com.kev.mathquiz.juego5.operaciones" />
+        <activity android:name="com.kev.mathquiz.AjustesDelJuego.Ajustes" />
+        <activity android:name="com.kev.mathquiz.juego4.correcto_incorrecto" />
+        <activity android:name="com.kev.mathquiz.juego2.juegoAdivina" />
+        <activity android:name="com.kev.mathquiz.juego2.adivina_numero" />
+        <activity android:name="com.kev.mathquiz.juego1.suma_resta_mul" />
+        <activity android:name="com.kev.mathquiz.MenuJuegos" />
+        <activity android:name="com.kev.mathquiz.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+
+    </application>
+
+</manifest>

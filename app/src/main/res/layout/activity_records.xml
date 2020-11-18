@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scoresBg"
+    >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        >
+        <com.scwang.wave.MultiWaveHeader
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:id="@+id/wave_header"
+            ></com.scwang.wave.MultiWaveHeader>
+        <TextView
+            android:id="@+id/highScoreTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/passion_one_bold"
+            android:text="RECORDS"
+            android:textColor="#fff"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            ></TextView>
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="10dp"
+
+            android:id="@+id/Animacion"
+            android:layout_below="@+id/highScoreTitle"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/premio"
+            ></com.airbnb.lottie.LottieAnimationView>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/Animacion"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/wave_header2"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_below="@+id/Animacion"
+                android:layout_height="match_parent"
+                >
+
+                <Button
+                    android:id="@+id/advancedScore2"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                     android:layout_marginRight="28dp"
+                    android:background="@drawable/btn_redondo2"
+                    android:text="Adivina el Número"
+                    android:fontFamily="@font/quicksand_regular"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:padding="15dp"
+                    android:textSize="20sp"
+                    />
+
+                <Button
+                    android:id="@+id/intento1"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginTop="10dp"
+
+                    android:text="Intentos: 12"
+                    android:fontFamily="@font/quicksand_regular"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:textSize="17sp"
+                    />
+
+
+
+                <Button
+                    android:id="@+id/quickMathHigh"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="18dp"
+
+                    android:textStyle="bold"
+
+
+                    android:layout_marginRight="28dp"
+                    android:background="@drawable/btn_redondo2"
+                    android:text="Correcto o Incorrecto"
+                    android:fontFamily="@font/quicksand_regular"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:padding="15dp"
+
+                    android:textSize="20sp"></Button>
+                <Button
+                    android:id="@+id/qScore"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/qScore"
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/quicksand_regular"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:textSize="17sp"  />
+
+                <Button
+                    android:id="@+id/timesPlayed"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="@color/white"
+                    android:text="@string/timesPlayed"
+                    android:fontFamily="@font/quicksand_regular"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:textSize="17sp"
+                    />
+
+                <Button
+                    android:id="@+id/advancedScore"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:textStyle="bold"
+                     android:layout_marginRight="28dp"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/btn_redondo2"
+                    android:text="Operaciones"
+                    android:fontFamily="@font/quicksand_regular"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:padding="15dp"
+                    android:textSize="20sp"
+                    />
+
+                <Button
+                    android:id="@+id/aScore"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginTop="10dp"
+
+                    android:text="Time taken: 12"
+                    android:fontFamily="@font/quicksand_regular"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:textSize="17sp"
+                    />
+
+                <Button
+                    android:id="@+id/aTimeTaken"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="@color/white"
+                    android:text="Time taken: 12"
+                    android:fontFamily="@font/quicksand_regular"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:textSize="17sp"
+                    />
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <com.scwang.wave.MultiWaveHeader
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:scaleY="-1"
+
+            android:id="@+id/wave_header2"
+            android:layout_alignParentBottom="true"
+            ></com.scwang.wave.MultiWaveHeader>
+
+    </RelativeLayout>
+
+</RelativeLayout>

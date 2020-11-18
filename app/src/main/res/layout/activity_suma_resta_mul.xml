@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:id="@+id/activity_quiz"
+    android:layout_width="match_parent"
+
+
+    android:layout_height="match_parent"
+    >
+    <com.scwang.wave.MultiWaveHeader
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:id="@+id/wave_header"
+        >
+
+
+    </com.scwang.wave.MultiWaveHeader>
+
+    <TextView
+        android:text="+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/numText2"
+        android:layout_toStartOf="@+id/numText2"
+        android:layout_marginEnd="14dp"
+        android:id="@+id/operation"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/qNumber"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_redondo"
+        android:gravity="center"
+        android:text="sgdfgds"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/pauseButton"
+        android:layout_width="wrap_content"
+         android:padding="5dp"
+        android:layout_alignParentRight="true"
+        android:onClick="showPopUp"
+
+        android:layout_margin="30dp"
+         android:layout_height="wrap_content"
+         android:background="@drawable/back2"
+        android:contentDescription="Mute Button"
+
+        app:srcCompat="@drawable/ic_pause_black_24dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/timer"
+        android:textSize="2dp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/timeText"
+        android:id="@+id/Animacion"
+        app:lottie_autoPlay="true"
+        android:backgroundTint="@color/colorVerde"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/ola"
+        ></com.airbnb.lottie.LottieAnimationView>
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numText2"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:layout_below="@+id/numText1"
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp"/>
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numText1"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/operation"
+        android:textSize="40dp"/>
+
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="150dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/black"
+        android:layout_below="@+id/operation"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeText"
+        android:text="@string/tiempo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="18dp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/answer"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp"/>
+
+    <include
+
+
+        layout="@layout/numeros">
+
+    </include>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/answer"
+        android:textSize="50dp"
+
+        android:layout_below="@id/line"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

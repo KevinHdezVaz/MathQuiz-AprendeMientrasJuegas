@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/timetrialsbg" >
+    <com.scwang.wave.MultiWaveHeader
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:id="@+id/wave_header"
+        ></com.scwang.wave.MultiWaveHeader>
+
+    <TextView
+        android:id="@+id/whichOneIsCorrect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:fontFamily="@font/passion_one_regular"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:text="@string/encuentra"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:onClick="playAgain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+     android:orientation="horizontal"
+    android:weightSum="2"
+    android:layout_marginTop="30dp"
+    android:id="@+id/linearHoriz"
+    android:layout_below="@+id/whichOneIsCorrect"
+    android:layout_height="wrap_content"
+
+    >
+
+    <TextView
+        android:id="@+id/timeLeftText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_below="@+id/userFeedback"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+
+        android:fontFamily="@font/coming_soon_regular"
+        android:text="10s"
+        android:textColor="@color/cgray"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="8dp"
+        android:layout_below="@+id/timeLeftText"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/quicksand_regular"
+        android:text="Score: 0"
+        android:textColor="@color/cgray"
+        android:textSize="30sp"
+        />
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/userFeedback"
+android:layout_below="@+id/linearHoriz"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/passion_one_regular"
+        android:text="@string/go"
+        android:textColor="@color/colorVerde"
+        android:textSize="60sp"
+        />
+
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/userFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:elevation="10dp"
+     android:columnCount="1"
+        android:rowCount="4"
+        >
+
+        <Button
+            android:id="@+id/button0"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/passion_one_bold"
+            android:onClick="choose"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:tag="0"
+            android:text=""
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:theme="@style/button_one"
+             />
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/passion_one_bold"
+            android:onClick="choose"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_marginTop="20dp"
+            android:tag="1"
+            android:text=""
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:theme="@style/button_two"
+
+            />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/passion_one_bold"
+            android:onClick="choose"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:tag="2"
+            android:text=""
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:theme="@style/button_three"
+        />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/passion_one_bold"
+            android:onClick="choose"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:tag="3"
+            android:text=""
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:theme="@style/button_four"
+            />
+    </GridLayout>
+
+    <com.scwang.wave.MultiWaveHeader
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:scaleY="-1"
+
+        android:id="@+id/wave_header2"
+        android:layout_alignParentBottom="true"
+        ></com.scwang.wave.MultiWaveHeader>
+
+</RelativeLayout>

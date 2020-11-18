@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+
+    <style name="button_one" parent="AppTheme">
+        <item name="colorAccent">@color/buttonone</item>
+    </style>
+
+    <style name="button_two" parent="AppTheme">
+        <item name="colorAccent">@color/buttontwo</item>
+    </style>
+
+    <style name="button_three" parent="AppTheme">
+        <item name="colorAccent">@color/buttonthree</item>
+    </style>
+
+    <style name="button_four" parent="AppTheme">
+        <item name="colorAccent">@color/buttonfour</item>
+    </style>
+
+    <style name="DarkMode" parent="AppTheme">
+        <item name="colorPrimary">@color/qboard_black</item>
+
+        <item name="android:textColorPrimary">@android:color/background_light</item>
+        <item name="colorAccent">@android:color/darker_gray</item>
+    </style>
+    <style name="ScorePopUpAnimation">
+        <item name="android:windowEnterAnimation">@anim/from_right_2</item>
+    </style>
+
+    <style name="AppThemeWActionBarDark" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">#cfcfcf</item>
+        <item name="android:textColorPrimary">#cfcfcf</item>
+        <item name="android:textColorSecondary">#9e9e9e</item>
+        <item name="colorAccent">#cfcfcf</item>
+        <item name="android:background">@color/qboard_black</item>
+
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+    </style>
+</resources>

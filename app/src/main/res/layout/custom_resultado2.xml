@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_gravity="center">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_marginRight="25dp"
+     app:cardCornerRadius="30dp"
+    android:layout_centerInParent="true"
+    android:layout_height="700dp"
+    >
+    <ImageView
+        android:layout_gravity="right"
+        android:id="@+id/cerrarVentana2"
+        android:layout_width="30dp"
+        android:src="@drawable/ic_close_black_24dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="7dp"
+        android:elevation="5dp"
+
+        android:layout_height="30dp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="40dp"
+             android:id="@+id/Animacion"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/premio"
+            ></com.airbnb.lottie.LottieAnimationView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="270dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <TextView
+        android:textSize="25dp"
+        android:layout_width="match_parent"
+        android:text="Muy bien, has acertado, has necesitado"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_bold"
+
+        android:id="@+id/txtResultado3"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+
+
+
+        />
+    <TextView
+        android:textSize="25dp"
+
+        android:layout_width="match_parent"
+        android:text="fgasfshdfsadjfjsad"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/txtResultado"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
+
+
+
+        />
+        <TextView
+            android:textSize="25dp"
+
+            android:layout_width="match_parent"
+            android:text="Intentos"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/msjResultado"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+
+
+
+            />
+
+        <TextView
+            android:textSize="25dp"
+
+            android:layout_width="match_parent"
+            android:text="¡Enhorabuena! ;)"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:id="@+id/txtResultado2"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:textStyle="italic"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+
+
+
+            />
+        </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/botonvamo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="35dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/colorGreen1"
+
+        android:textStyle="bold"
+        android:background="@drawable/btn_redondo"
+        android:text="INTETARLO NUEVAMENTE"
+        android:textColor="@android:color/white" />
+
+</androidx.cardview.widget.CardView>
+
+</RelativeLayout>
