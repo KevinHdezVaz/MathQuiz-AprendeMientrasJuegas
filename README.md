@@ -40,7 +40,7 @@ _Descargar el repositorio de Github y editar el archivo Firebase del proyecto y 
  
 ## Licencia 📄
 
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
+Este proyecto está bajo la Licencia MIT - mira el archivo [LICENSE.md](LICENSE) para detalles
 
 
 ## Expresiones de Gratitud 🎁
