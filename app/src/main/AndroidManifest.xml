@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.kev.mathquiz">
+    package="com.kev.game">
 
     <uses-permission android:name="android.permission.VIBRATE" />
 
@@ -16,15 +16,15 @@
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-3881357943956604~3382970997"/>
 
-         <activity android:name="com.kev.mathquiz.juego3.JuegoTiempo" />
-        <activity android:name="com.kev.mathquiz.juego5.operaciones" />
-        <activity android:name="com.kev.mathquiz.AjustesDelJuego.Ajustes" />
-        <activity android:name="com.kev.mathquiz.juego4.correcto_incorrecto" />
-        <activity android:name="com.kev.mathquiz.juego2.juegoAdivina" />
-        <activity android:name="com.kev.mathquiz.juego2.adivina_numero" />
-        <activity android:name="com.kev.mathquiz.juego1.suma_resta_mul" />
-        <activity android:name="com.kev.mathquiz.MenuJuegos" />
-        <activity android:name="com.kev.mathquiz.MainActivity">
+         <activity android:name="com.kev.game.juego3.JuegoTiempo" />
+        <activity android:name="com.kev.game.juego5.operaciones" />
+        <activity android:name="com.kev.game.AjustesDelJuego.Ajustes" />
+        <activity android:name="com.kev.game.juego4.correcto_incorrecto" />
+        <activity android:name="com.kev.game.juego2.juegoAdivina" />
+        <activity android:name="com.kev.game.juego2.adivina_numero" />
+        <activity android:name="com.kev.game.juego1.suma_resta_mul" />
+        <activity android:name="com.kev.game.MenuJuegos" />
+        <activity android:name="com.kev.game.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,7 +32,7 @@
             </intent-filter>
         </activity>
 
-        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+
 
     </application>
 

@@ -4,7 +4,7 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
     defaultConfig {
-        applicationId "com.math.mathquiz"
+        applicationId "com.math.game"
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
@@ -29,13 +29,10 @@ dependencies {
     implementation 'androidx.preference:preference:1.0.0'
     implementation 'com.google.android.gms:play-services-ads:19.3.0'
 
-    implementation 'com.google.firebase:firebase-analytics:17.5.0'
-    implementation 'com.google.firebase:firebase-messaging:20.0.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation "com.airbnb.android:lottie:3.0.7"
     implementation 'com.github.MrNtlu:Toastie:1.1.0'
     implementation 'com.scwang.wave:MultiWaveHeader:1.0.0-alpha-1'
     implementation 'com.github.deano2390:MaterialShowcaseView:1.2.0'
     implementation 'androidx.cardview:cardview:1.0.0'
-}
-apply plugin: 'com.google.gms.google-services'
+} 
